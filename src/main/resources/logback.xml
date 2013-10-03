@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+	<appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<!-- layout 可以参考 http://logback.qos.ch/manual/layouts.html -->
+			<pattern>[%level] %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<appender name="rollingFile" class="ch.qos.logback.core.rolling.RollingFileAppender">
+		<file>logs/encodingConversion.log</file>
+		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+			<fileNamePattern>logs/encodingConversion.%d{yyyy-MM-dd}.log</fileNamePattern>
+		</rollingPolicy>
+		<maxHistory>30</maxHistory>
+		<encoder>
+			<pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} %5level [%thread] %logger.%method\(%file:%line\) %msg%n</pattern>
+		</encoder>
+	</appender>
+	
+	<root level="info">
+		<appender-ref ref="console" />
+	</root>
+</configuration>
