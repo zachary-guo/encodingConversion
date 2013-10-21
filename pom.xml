@@ -21,6 +21,11 @@
 			<url>http://maven.zachary.org:8080/nexus/content/repositories/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>
+	
+	<scm>
+		<connection>scm:git:git://github.com/zachary-guo/encodingConversion.git</connection>
+		<developerConnection>scm:git:github:zachary-guo/encodingConversion.git</developerConnection>
+  </scm>
 
 	<properties>
 		<junit.version>4.11</junit.version>
