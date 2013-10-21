@@ -4,7 +4,7 @@
 	<groupId>org.zachary.tools</groupId>
 	<artifactId>encodingConversion</artifactId>
 	<packaging>jar</packaging>
-	<version>1.0-SNAPSHOT</version>
+	<version>1.0</version>
 
 	<name>Tools :: Encoding-Conversion</name>
 	<url>https://github.com/zachary-guo/encodingConversion</url>
@@ -25,6 +25,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/zachary-guo/encodingConversion.git</connection>
 		<developerConnection>scm:git:github:zachary-guo/encodingConversion.git</developerConnection>
+		<tag>v1.0</tag>
   </scm>
 
 	<properties>
